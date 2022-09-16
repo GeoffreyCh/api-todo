@@ -15,6 +15,8 @@ return new class extends Migration
     {
         Schema::create('todos', function (Blueprint $table) {
             $table->id();
+            $table->string('texte');
+            $table->boolean('termine');
             $table->timestamps();
         });
     }
